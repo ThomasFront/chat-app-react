@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
 `
 
 export const Container = styled.main`
-  padding: 16px;
   background-color: ${({theme}) => theme.colors.primary};
   min-height: 92vh;
 

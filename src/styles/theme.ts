@@ -5,6 +5,6 @@ export const theme = {
     secondary: '#1B2138',
     text: '#F2F5FF',
     subtitle: '#575D6B',
-    distinctive: '#3A72AD'
+    distinctive: '#3A72AD',
   }
 }

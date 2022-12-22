@@ -1,7 +1,12 @@
+import { NavMobile } from "../../components/NavMobile/NavMobile"
+import { ChatWrapper, Wrapper } from "./Chat.styles"
 
 
 export const Chat = () => {
   return (
-    <div>Chat</div>
+    <Wrapper>
+      <NavMobile />
+      <ChatWrapper>d</ChatWrapper>
+    </Wrapper>
   )
 }
