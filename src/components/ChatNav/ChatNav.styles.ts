@@ -15,6 +15,7 @@ export const Wrapper = styled.nav`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 200;
 
   div {
     cursor: pointer;
