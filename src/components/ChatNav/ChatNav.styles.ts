@@ -75,7 +75,7 @@ export const Menu = styled.div<MenuProps>`
   padding-top: 2px;
   background-color: ${({theme}) => theme.colors.secondary};
   width: 80px;
-  min-height: 92vh;
+  min-height: 94vh;
   text-align: center;
   opacity: 1;
   transition: transform 0.3s, opacity 0.3s;
@@ -90,6 +90,6 @@ export const Menu = styled.div<MenuProps>`
   }
 
 @media (min-width: 1200px){
-  min-height: 85vh;
+  min-height: 93.5vh;
 }
 `
