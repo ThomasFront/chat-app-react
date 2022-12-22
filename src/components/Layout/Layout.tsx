@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Wrapper } from './Layout.styles'
 import { Navbar } from '../Navbar/Navbar'
-import { NavMobile } from '../NavMobile/NavMobile'
+import { NavMobile } from '../ChatNav/ChatNav'
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
