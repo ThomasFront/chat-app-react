@@ -5,13 +5,17 @@ import App from './App'
 import { GlobalStyles } from './styles/GlobalStyles'
 import { theme } from './styles/theme'
 import { BrowserRouter } from "react-router-dom";
+import { store } from './store'
+import { Provider } from 'react-redux'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <App />
+        <Provider store={store}>
+          <GlobalStyles />
+          <App />
+        </Provider>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,
