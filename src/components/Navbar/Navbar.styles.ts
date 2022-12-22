@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { ImEarth } from 'react-icons/im'
-import { FaUserFriends } from 'react-icons/fa'
 
 export const Wrapper = styled.nav`
   display: flex;
@@ -76,28 +74,5 @@ export const Wrapper = styled.nav`
       padding: 8px 16px;
       font-size: 14px;
     }
-  }
-`
-
-export const EarthIcon = styled(ImEarth)`
-  font-size: 34px;
-  padding: 5px;
-  cursor: pointer;
-`
-
-export const FriendsIcon = styled(FaUserFriends)`
-  font-size: 36px;
-  padding: 5px;
-  cursor: pointer;
-`
-
-export const ChatContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  p {
-    font-size: 12px;
   }
 `
