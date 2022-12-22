@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   padding: 16px;
   width: 100%;
+  max-width: 1000px;
   height: 80vh;
 `
 
