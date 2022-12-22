@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { Message } from '../components/Message/Message'
-import { addMessage, fetchAllMessages, groupMessagesSelector, usernameSelector } from '../slices/chatSlice'
-import { AppDispatch } from '../store'
+import { Message } from '../Message/Message'
+import { addMessage, fetchAllMessages, groupMessagesSelector, usernameSelector } from '../../slices/chatSlice'
+import { AppDispatch } from '../../store'
 import { Container, InputWrapper, Wrapper } from './GroupChat.styles'
 
 export const GroupChat = () => {

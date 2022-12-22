@@ -5,10 +5,11 @@ export const Wrapper = styled.section`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 16px;
+  padding: 32px;
   width: 100%;
   max-width: 1000px;
-  height: 80vh;
+  max-height: 80vh;
+  overflow-y: auto;
 `
 
 export const InputWrapper = styled.div`

@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
 import { FriendsChat } from "../../components/FriendsChat/FriendsChat"
 import { ChatNav } from "../../components/ChatNav/ChatNav"
-import { GroupChat } from "../../GroupChat/GroupChat"
+import { GroupChat } from "../../components/GroupChat/GroupChat"
 import { selectedChatSelector } from "../../slices/chatSlice"
 import { ChatWrapper, Wrapper } from "./Chat.styles"
 
