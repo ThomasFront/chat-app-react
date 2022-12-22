@@ -8,7 +8,6 @@ import { ChatWrapper, Wrapper } from "./Chat.styles"
 
 export const Chat = () => {
   const selectedChat = useSelector(selectedChatSelector)
-  console.log(selectedChat)
   return (
     <Wrapper>
       <ChatNav />

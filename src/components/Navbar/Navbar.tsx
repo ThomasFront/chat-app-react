@@ -5,18 +5,21 @@ import { auth, db, logout } from '../../firebase';
 import { useEffect, useState } from 'react';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import userImage from '/images/user.png'
+import { useDispatch } from 'react-redux';
+import { updateUsername, usernameSelector } from '../../slices/chatSlice';
+import { useSelector } from 'react-redux';
 
 export const Navbar = () => {
   const navigate = useNavigate()
-
+  const dispatch = useDispatch()
+  const username = useSelector(usernameSelector)
   const [user] = useAuthState(auth);
-  const [username, setUsername] = useState<null | string>(null)
 
   const getUser = async () => {
     try {
       const q = query(collection(db, "users"), where("uid", "==", user?.uid));
       const docs = await getDocs(q)
-      setUsername(docs.docs[0].data().name)
+      dispatch(updateUsername(docs.docs[0].data().name))
     } catch (error) {
       console.log(error)
     }
