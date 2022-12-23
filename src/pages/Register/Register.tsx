@@ -3,10 +3,12 @@ import { useNavigate } from 'react-router-dom'
 import { Form } from '../../components/Form/Form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { registerWithEmailAndPassword } from '../../firebase';
+import { auth, registerWithEmailAndPassword } from '../../firebase';
 import { SubmitHandler } from 'react-hook-form/dist/types';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 export const Register = () => {
+  const [user] = useAuthState(auth)
   const navigate = useNavigate()
 
   type Inputs = {

@@ -21,11 +21,7 @@ export const Wrapper = styled.nav`
     cursor: pointer;
 
     p {
-      font-size: 12px;
-
-      @media (min-width: 768px){
-        font-size: 12px;
-      }
+      font-size: 10px;
     }
 
     svg {
@@ -75,7 +71,7 @@ export const Menu = styled.div<MenuProps>`
   padding-top: 2px;
   background-color: ${({theme}) => theme.colors.secondary};
   width: 80px;
-  min-height: 94vh;
+  min-height: 100vh;
   text-align: center;
   opacity: 1;
   transition: transform 0.3s, opacity 0.3s;
@@ -88,8 +84,4 @@ export const Menu = styled.div<MenuProps>`
   >div {
     margin: 10px 0;
   }
-
-@media (min-width: 1200px){
-  min-height: 93.5vh;
-}
 `

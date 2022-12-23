@@ -44,7 +44,7 @@ export const Navbar = () => {
             <img src={userImage} alt="Avatar użytkownika" />
           </>
         }
-        <button onClick={() => { user ? handleLogout() : navigate('/register') }}>{user ? 'Wyloguj się' : 'Zaloguj się'}</button>
+        <button onClick={() => { user ? handleLogout() : navigate('/login') }}>{user ? 'Wyloguj się' : 'Zaloguj się'}</button>
       </div>
     </Wrapper>
   )
