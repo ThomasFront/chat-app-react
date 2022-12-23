@@ -18,11 +18,11 @@ export const ChatNav = () => {
       <Menu hideMenu={showBurger}>
         <div onClick={() => handleChatNav('group')}>
           <EarthIcon />
-          <p>Group chat</p>
+          <p>Czat grupowy</p>
         </div>
         <div onClick={() => handleChatNav('friends')}>
           <FriendsIcon />
-          <p>Friends</p>
+          <p>Użytkownicy</p>
         </div>
       </Menu>
     </Wrapper>

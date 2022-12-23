@@ -1,15 +1,24 @@
 import styled from "styled-components";
+import ScrollToBottom from 'react-scroll-to-bottom';
 
-export const Wrapper = styled.section`
+export const ScrollBottom = styled(ScrollToBottom)`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 32px;
-  width: 100%;
   max-width: 1000px;
   max-height: 80vh;
   overflow-y: auto;
+  width: 100%;
+
+  >div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+  }
 `
 
 export const InputWrapper = styled.div`
@@ -59,6 +68,11 @@ export const InputWrapper = styled.div`
     }
   }
   
+  h3 {
+    color: crimson;
+    padding: 0 10px;
+    text-align: center;
+  }
 `
 
 export const Container = styled.div`
@@ -66,5 +80,5 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
 `

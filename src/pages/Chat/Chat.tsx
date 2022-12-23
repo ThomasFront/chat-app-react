@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
-import { FriendsChat } from "../../components/FriendsChat/FriendsChat"
 import { ChatNav } from "../../components/ChatNav/ChatNav"
 import { GroupChat } from "../../components/GroupChat/GroupChat"
+import { Users } from "../../components/Users/Users"
 import { selectedChatSelector } from "../../slices/chatSlice"
 import { ChatWrapper, Wrapper } from "./Chat.styles"
 
@@ -15,7 +15,7 @@ export const Chat = () => {
         {selectedChat === 'group' ?
           <GroupChat />
           :
-          <FriendsChat />
+          <Users />
         }
       </ChatWrapper>
     </Wrapper>

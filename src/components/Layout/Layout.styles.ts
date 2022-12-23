@@ -5,15 +5,11 @@ export const Wrapper = styled.div`
   max-width: 1200px;
   width: 100%;
   color: ${({theme}) => theme.colors.text};
-
-  @media (min-width: 1200px){
-    margin: 40px auto;
-  }
 `
 
 export const Container = styled.main`
   background-color: ${({theme}) => theme.colors.primary};
-  min-height: 92vh;
+  height: 100vh;
 
   @media (min-width: 1200px){
     min-height: 85vh;
